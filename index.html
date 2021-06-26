@@ -9,6 +9,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ICONES -->
+    <link rel="stylesheet" href="./assets/icons/style.css" />
 
     <!-- STYLES -->
     <link rel="stylesheet" href="style.css" />
@@ -21,7 +23,7 @@
   </head>
   <body>
     <header id="header">
-      <nav class="container show">
+      <nav class="container">
         <a class="logo" href="#">beauty<span>salon</span>.</a>
         <div class="menu">
           <ul class="grid">
@@ -32,8 +34,8 @@
             <li><a class="title" href="#contact">Contato</a></li>
           </ul>
         </div>
-        <div class="open">...</div>
-        <div class="close">x</div>
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-close"></div>
       </nav>
     </header>
 
@@ -60,12 +62,46 @@
       <div class="divider-1"></div>
 
       <section class="section" id="about">
-        <div class="container grid">Sobre</div>
+        <div class="container grid">
+          <div class="image">
+            <img
+              src="https://images.unsplash.com/photo-1559599101-f09722fb4948?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGFpcmRyZXNzZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+              alt="Três mulheres com segurando utensílios para corte de cabelo"
+            />
+          </div>
+          <div class="text">
+            <h2 class="title">Sobre nós</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui alias
+              sint non doloribus? Debitis, est qui non accusamus ipsam dolorum
+              quae deserunt, eligendi numquam distinctio, neque consequatur
+              animi error et.
+            </p>
+            <br />
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil
+              aperiam, repellendus laborum exercitationem fuga vel aliquid,
+              velit totam architecto consequatur, quidem quia dicta? Quaerat
+              laboriosam aspernatur quibusdam veritatis ad maxime?
+            </p>
+            <br />
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id
+              architecto ipsam placeat. Consequuntur saepe vero adipisci
+              debitis. Rem vitae officia quasi dolorem tempora! Eaque amet
+              labore voluptatibus quo cupiditate tenetur.
+            </p>
+          </div>
+        </div>
       </section>
+
+      <div class="divider-2"></div>
 
       <section class="section" id="services">
         <div class="container grid">Serviços</div>
       </section>
     </main>
+
+    <script src="main.js"></script>
   </body>
 </html>
