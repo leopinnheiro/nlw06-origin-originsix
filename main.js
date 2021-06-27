@@ -32,7 +32,8 @@ function changeHeaderWhenScroll() {
 const swiper = new Swiper('.swiper-container', {
   slidesPerView: 1,
   pagination: {
-    el: '.swiper-pagination'
+    el: '.swiper-pagination',
+    clickable: true
   },
   mousewheel: true,
   keyboard: true,
@@ -41,6 +42,11 @@ const swiper = new Swiper('.swiper-container', {
       slidesPerView: 2,
       setWrapperSize: true
     }
+  },
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false
   }
 });
 
