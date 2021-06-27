@@ -35,7 +35,6 @@ const swiper = new Swiper('.swiper-container', {
     el: '.swiper-pagination',
     clickable: true
   },
-  mousewheel: true,
   keyboard: true,
   breakpoints: {
     767: {
@@ -45,7 +44,7 @@ const swiper = new Swiper('.swiper-container', {
   },
   loop: true,
   autoplay: {
-    delay: 2500,
+    delay: 4000,
     disableOnInteraction: false
   }
 });
