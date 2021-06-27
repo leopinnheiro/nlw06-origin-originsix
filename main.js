@@ -121,3 +121,19 @@ sliderHue.addEventListener('input', function () {
 function changeCssVariable(variable, value) {
   document.documentElement.style.setProperty(variable, value);
 }
+
+// Rave
+const raveButton = document.querySelector('div.rave-button');
+var raveInterval;
+raveButton.addEventListener('click', function () {
+  raveButton.classList.toggle('playing');
+
+  if (raveButton.classList.contains('playing')) {
+    raveInterval = setInterval(function () {
+      const hue = Math.floor(Math.random() * 360);
+      changeCssVariable(hueCssVariable, hue);
+    }, 100);
+  } else {
+    clearInterval(raveInterval);
+  }
+});
