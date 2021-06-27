@@ -104,3 +104,22 @@ window.addEventListener('scroll', function () {
   backToTop();
   activateMenuAtCurrentSection();
 });
+
+// Controle de componente para alterar cores de interface
+const hueCssVariable = '--hue';
+const sliderHue = document.getElementById('slide-hue');
+const sliderHueValue = document.getElementById('slide-hue-value');
+// Seta o valor inicial da variavel do CSS
+sliderHue.value = getComputedStyle(document.documentElement).getPropertyValue(
+  hueCssVariable
+);
+
+sliderHue.addEventListener('input', function () {
+  const sliderValue = sliderHue.value;
+  sliderHueValue.innerHTML = sliderValue;
+  changeCssVariable(hueCssVariable, sliderValue);
+});
+
+function changeCssVariable(variable, value) {
+  document.documentElement.style.setProperty(variable, value);
+}
